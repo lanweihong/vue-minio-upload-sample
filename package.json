@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
+    "element-ui": "^2.15.6",
+    "spark-md5": "^3.0.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -32,7 +36,13 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars":"off",
+      "generator-star-spacing": "off",
+      "no-debugger": "off",
+      "no-console":"off",
+      "no-irregular-whitespace":"off"
+    }
   },
   "browserslist": [
     "> 1%",
